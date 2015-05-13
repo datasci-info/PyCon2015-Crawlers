@@ -1,22 +1,32 @@
-<head>
-    <meta charset="utf-8">
-    <title>PyConAPAC 2015 Tutorial - 模仿遊戲 用爬蟲類學爬蟲</title>
-</head>
-<h1>General Info</h1>
-<p>Be sure to check out our <a href="http://tw.pycon.org/2015apac/en/tutorial">Tutorial Overview page</a> for general info, such as list of all available tutorials, minimum enrollment number, and contact info.</p>
 <h1>課程簡介</h1>
 <p>「現在告訴我，我是一個人，還是一隻爬蟲呢？」</p>
 <p>網路爬蟲程式是模仿人類行為自動造訪網站並擷取網站訊息的程式，具有極高商業應用價值。本教學活動透過動手實作，讓您具有網路爬蟲程式的基本概念與實戰能力。您可以從取得新聞、PTT戰文、社群網站內容擷取、懶人訂票等各種範例中，學到征服常見網頁的爬蟲技術。</p>
+
+<p>Be sure to check out our <a href="http://tw.pycon.org/2015apac/en/tutorial">Tutorial Overview page</a> for general info, such as list of all available tutorials, minimum enrollment number, and contact info.</p>
+
 <h1>行前準備</h1>
 <ul>
     <li>一台能上網的電腦</li>
-    <li>基礎 Python 語法認識。較客觀的準則：如果能用任何方式，上網搜尋、問親朋好友﹍等，了解下列程式碼會印出的內容，我們即認為您可以在本課程收穫許多。
-        <img src="http://i.imgur.com/BH4BcbB.png" title="source: imgur.com" />
+    <li>基礎 Python 語法認識。較客觀的準則：如果能用任何方式，上網搜尋、問親朋好友﹍等，預測下列程式碼double(5)會印出的內容（答錯也沒關係），我們即認為您可以在本課程收穫許多。
+        <img src="http://i.imgur.com/tJlJ2bq.png" title="source: imgur.com" />
     </li>
 </ul>
 <h1>課程大綱</h1>
 <h2>小時一、爬蟲穿新衣</h2>
-<p>寫爬蟲前要先了解網頁資料呈現形式，你肉眼所看到資料,如何用有系統的方式取得？一般來說，網頁是專門設計來把資料呈現給人類眼球閱讀的，有些網站也會想把資料呈現給機器使用，我們會教大家這些讓機器使用的應用程式界面(API)。</p>
+<p>寫爬蟲前要先了解網頁資料呈現形式，肉眼在瀏覽器所看到的畫面是根據哪些資料產生？介紹瀏覽器運作原理、URL、請求與回應。</p>
+<p>talk: introduction</p>
+<ul>
+    <li>網頁資料呈現的形式</li>
+</ul>
+<p>- lab: Facebook Graph API</p>
+<ul>
+    <li>拆解內容取得想要的資料</li>
+    <li>今年我被按了多少讚??</li>
+</ul>
+
+
+<h2>小時二、爬蟲肚子餓</h2>
+<p>一般來說，網頁是專門設計來把資料呈現給人類眼球閱讀的，有些網站也會想把資料呈現給機器使用，我們會介紹這些讓機器使用的應用程式界面(API)。</p>
 <p>- talk: introduction</p>
 <ul>
     <li>網頁資料呈現的形式</li>
@@ -27,17 +37,17 @@
     <li>今年我被按了多少讚??</li>
 </ul>
 <img width="50%" src="http://i.imgur.com/nj9oVYQ.png" title="source: imgur.com" />
-<h2>小時二、爬蟲肚子餓</h2>
+<h2>小時三、爬蟲去覓食</h2>
 <p>介紹使用GET與POST方法送出請求並取得網頁訊息。取得網頁資訊後，要利用常見剖析網頁資料的工具擷取出內容。最後有專案應用––新聞大對決，鄉民常說雅虎新聞跟PTT是平行宇宙，我們來練習抓取雅虎新聞與PTT八卦版來比較看看。
 </p>
 <p>- talk:</p>
 <ul>
     <li>handling requests (GET, POST)</li>
-    <li>Parsing Tools (BeautifulSoup4, pyquery, lxml, pandas, re)</li>
+    <li>Parsing Tools (BeautifulSoup4, lxml, pandas, re)</li>
 </ul>
 <p>- lab: Yahoo news and PTT</p>
 <img src="http://i.imgur.com/sDLremy.gif" title="source: imgur.com" />
-<h2>小時三、爬蟲去覓食</h2>
+<h2>小時四、爬蟲去考試</h2>
 <p>進一步介紹剖析技巧，針對常見的資料格式做處理。目的是把資料清理乾淨後送進資料庫裡。在專案中，會帶大家爬臺灣證券交易所的資料做練習。</p>
 <p>- talk</p>
 <ul>
@@ -49,17 +59,17 @@
     <li>臺灣證券交易所</li>
 </ul>
 <img width="50%" src="http://i.imgur.com/ssuIptC.png" title="source: imgur.com" />
-<h2>小時四、爬蟲去考試</h2>
+<h2>小時五、爬蟲挖地道</h2>
 <p>爬網頁不一定每次都要繞過使用者界面，在適當的時機使用Web Drivers可以省下很多麻煩。大家會在懶人方式下單訂票的範例體驗到這點。</p>
 <p>- talk</p>
 <ul>
-    <li>Web Drivers (selenium, phantomjs)</li>
+    <li>Web Drivers (selenium)</li>
 </ul>
 <p>- lab:</p>
 <ul>
     <li>懶人自動化訂票 or 下單</li>
 </ul>
-<h2>小時五、爬蟲挖地道</h2>
+<h2>小時六、爬蟲挖地道</h2>
 <p>需要登入的網站要用特別的技巧才能取得資料。我們會介紹token與Cookie的概念，並應用在懶人訂票專案中。</p>
 <p>- talk</p>
 <ul>
@@ -69,16 +79,15 @@
 <ul>
     <li>懶人自動化 (高速) 訂票 or 下單</li>
 </ul>
-<h2>小時六、自己的爬蟲自己寫</h2>
-<p>學習與練習了五個小時，大家心裡的爬蟲肯定開始蠕動了，把他們釋放出來爬向肥沃的網路世界吧！
-</p>
-<p>- Final Project:</p>
+
+
+<h1>參考課後作業、自己的爬蟲自己寫</h1>
 <ul>
     <li>擷取當日PTT八卦版前三大戰文</li>
     <li>Coursera 自動加入&rdquo;當前沒有班次&rdquo;的課程</li>
     <li>自己提出爬蟲 idea 來實現</li>
 </ul>
-<h2>參考資源</h2>
+<h1>參考資源</h1>
 <ul>
     <li>public crawler tutorial by c3h3: <a href="http://nbviewer.ipython.org/github/c3h3/NCCU-PyData-Courses-2013Spring/blob/master/Lecture1/crawler/Lecture2_WebCrawler.ipynb">http://nbviewer.ipython.org/github/c3h3/NCCU-PyData-Courses-2013Spring/blob/master/Lecture1/crawler/Lecture2_WebCrawler.ipynb</a></li>
 </ul>

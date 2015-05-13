@@ -6,7 +6,7 @@
 
 <h1>行前準備</h1>
 <ul>
-    <li>一台能上網的電腦</li>
+    <li>一台能上網的電腦(瀏覽器建議使用 Chrome 或 FireFox)</li>
     <li>基礎 Python 語法認識。較客觀的準則：如果能用任何方式，上網搜尋、問親朋好友﹍等，預測下列程式碼double(5)會印出的內容（答錯也沒關係），我們即認為您可以在本課程收穫許多。
         <img src="http://i.imgur.com/tJlJ2bq.png" title="source: imgur.com" />
     </li>
@@ -14,24 +14,27 @@
 <h1>課程大綱</h1>
 <h2>小時一、爬蟲穿新衣</h2>
 <p>寫爬蟲前要先了解網頁資料呈現形式，肉眼在瀏覽器所看到的畫面是根據哪些資料產生？介紹瀏覽器運作原理、URL、請求與回應。</p>
-<p>talk: introduction</p>
+<li>talk: introduction</li>
 <ul>
-    <li>網頁資料呈現的形式</li>
+    <li>Client & Server 架構</li>
+    <li>瀏覽器開發人員工具</li>
+    <li>HTML/CSS/JavaScript</li>
+    <li>Python requests 套件(簡單操作)</li>
 </ul>
-<p>- lab: Facebook Graph API</p>
+<li>lab:</li>
 <ul>
-    <li>拆解內容取得想要的資料</li>
-    <li>今年我被按了多少讚??</li>
+    <li>找出PTT網頁版的網址規則</li>
+    <li>使用requests取得PTT網頁版的網頁內容</li>
 </ul>
 
 
 <h2>小時二、爬蟲肚子餓</h2>
 <p>一般來說，網頁是專門設計來把資料呈現給人類眼球閱讀的，有些網站也會想把資料呈現給機器使用，我們會介紹這些讓機器使用的應用程式界面(API)。</p>
-<p>- talk: introduction</p>
+<li>talk: introduction</li>
 <ul>
     <li>網頁資料呈現的形式</li>
 </ul>
-<p>- lab: Facebook Graph API</p>
+<li>lab: Facebook Graph API</li>
 <ul>
     <li>拆解內容取得想要的資料</li>
     <li>今年我被按了多少讚??</li>
@@ -40,42 +43,42 @@
 <h2>小時三、爬蟲去覓食</h2>
 <p>介紹使用GET與POST方法送出請求並取得網頁訊息。取得網頁資訊後，要利用常見剖析網頁資料的工具擷取出內容。最後有專案應用––新聞大對決，鄉民常說雅虎新聞跟PTT是平行宇宙，我們來練習抓取雅虎新聞與PTT八卦版來比較看看。
 </p>
-<p>- talk:</p>
+<li>talk:</li>
 <ul>
     <li>handling requests (GET, POST)</li>
     <li>Parsing Tools (BeautifulSoup4, lxml, pandas, re)</li>
 </ul>
-<p>- lab: Yahoo news and PTT</p>
+<li>lab: Yahoo news and PTT</li>
 <img src="http://i.imgur.com/sDLremy.gif" title="source: imgur.com" />
 <h2>小時四、爬蟲去考試</h2>
 <p>進一步介紹剖析技巧，針對常見的資料格式做處理。目的是把資料清理乾淨後送進資料庫裡。在專案中，會帶大家爬臺灣證券交易所的資料做練習。</p>
-<p>- talk</p>
+<li>talk:</li>
 <ul>
     <li>Parser Skills (Encoding, Table, csv, json, xml, and some bad data)</li>
     <li>database(SQLite)</li>
 </ul>
-<p>- lab:</p>
+<li>lab:</li>
 <ul>
     <li>臺灣證券交易所</li>
 </ul>
 <img width="50%" src="http://i.imgur.com/ssuIptC.png" title="source: imgur.com" />
 <h2>小時五、爬蟲挖地道</h2>
 <p>爬網頁不一定每次都要繞過使用者界面，在適當的時機使用Web Drivers可以省下很多麻煩。大家會在懶人方式下單訂票的範例體驗到這點。</p>
-<p>- talk</p>
+<li>talk</li>
 <ul>
     <li>Web Drivers (selenium)</li>
 </ul>
-<p>- lab:</p>
+<li>lab:</li>
 <ul>
     <li>懶人自動化訂票 or 下單</li>
 </ul>
-<h2>小時六、爬蟲挖地道</h2>
+<h2>小時六、爬蟲去斗六</h2>
 <p>需要登入的網站要用特別的技巧才能取得資料。我們會介紹token與Cookie的概念，並應用在懶人訂票專案中。</p>
-<p>- talk</p>
+<li>talk</li>
 <ul>
     <li>Advanced Connector Skill (TOKEN, COOKIE)</li>
 </ul>
-<p>- lab:</p>
+<li>lab:</li>
 <ul>
     <li>懶人自動化 (高速) 訂票 or 下單</li>
 </ul>
